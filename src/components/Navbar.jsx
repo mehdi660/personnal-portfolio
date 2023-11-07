@@ -7,8 +7,7 @@ function Navbar() {
     <>
       <Navbarr bg="dark" data-bs-theme="dark">
         <Container>
-          <Navbarr.Brand href="#home">Navbar</Navbarr.Brand>
-          <Nav className="me-auto">
+          <Nav className="me-auto display:flex">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#about">About me</Nav.Link>
             <Nav.Link href="#skills">Skills</Nav.Link>
