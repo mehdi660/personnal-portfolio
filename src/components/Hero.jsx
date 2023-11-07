@@ -1,9 +1,13 @@
 import React from "react";
+import bg from "../assets/milky-way-5295160_1920.jpg";
 
 const Hero = () => {
   return (
     <main>
-      <h1>Welcome stranger !</h1>
+      <div className="hero_bnr">
+        <img src={bg} alt="stars" />
+        <h1>Welcome stranger !</h1>
+      </div>
     </main>
   );
 };

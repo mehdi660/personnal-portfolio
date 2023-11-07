@@ -1,0 +1,17 @@
+.hero_bnr {
+  position: relative;
+}
+
+.hero_bnr img {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  filter: blur(
+    3px
+  ); /* Vous pouvez ajuster la valeur du flou en modifiant le nombre de pixels (ici 5px) */
+}
+
+.hero_bnr h1 {
+  position: absolute;
+}
