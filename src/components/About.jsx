@@ -15,7 +15,7 @@ const About = () => {
       <div className="about_me">
         <h2>About me</h2>
         <p>
-          Hello ! I'm Mehdi and I'm actually in a web developper formation !
+          Hello ! I'm Mehdi, I'm 21 and I live in Perpignan.
           <br />
           I'm Passionate about game, web development, music and I am looking for
           a company for a work-study or other employment contract. I started
