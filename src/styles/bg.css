@@ -3,8 +3,6 @@ main {
   background-image: url("../assets/milky-way-5295160_1920.jpg");
   background-size: cover;
   background-position: center;
-  border-top-left-radius: 100px; /* Border-radius coin supérieur gauche */
-  border-top-right-radius: 100px; /* Border-radius coin supérieur droit */
 }
 
 .hero_bnr {
@@ -18,6 +16,7 @@ main {
 
 .hero_bnr h1 {
   z-index: 100;
+  font-size: 100px;
   color: #2d2f59;
   font-family: "DM Sans", sans-serif;
   font-weight: bold;
