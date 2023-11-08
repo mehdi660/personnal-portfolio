@@ -7,10 +7,10 @@ import moi from "../assets/moi.jpg";
 function Navbar() {
   return (
     <header>
-      <Navbarr bg="#2D2F59" data-bs-theme="dark">
+      <Navbarr data-bs-theme="dark">
         <Container>
           <Nav className="me-auto display:flex">
-            <Avatar src={moi} />
+            <Avatar src={moi} alt="moi" />
             <Nav.Link href="#about">About me</Nav.Link>
             <Nav.Link href="#skills">Skills</Nav.Link>
             <Nav.Link href="#project">Project</Nav.Link>
