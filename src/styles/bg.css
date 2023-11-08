@@ -1,22 +1,27 @@
-.hero_bnr {
-  display: flex;
-
-  justify-content: center;
+main {
+  height: 100vh;
+  background-image: url("../assets/milky-way-5295160_1920.jpg");
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 100px; /* Border-radius coin supérieur gauche */
+  border-top-right-radius: 100px; /* Border-radius coin supérieur droit */
 }
 
-.hero_bnr img {
-  position: fixed;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  /* filter: blur(
-    3px
-  );  */
+.hero_bnr {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .hero_bnr h1 {
-  display: flex;
   z-index: 100;
-  margin-top: 200px;
-  color: bisque;
+  color: #2d2f59;
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #7672f2,
+    0 0 30px #0902ec, 0 0 40px #72d0f274, 0 0 55px #141170, 0 0 75px #1008f8;
+  margin: 0;
 }

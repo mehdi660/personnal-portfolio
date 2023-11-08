@@ -6,8 +6,8 @@ import moi from "../assets/moi.jpg";
 
 function Navbar() {
   return (
-    <>
-      <Navbarr bg="dark" data-bs-theme="dark">
+    <header>
+      <Navbarr bg="#2D2F59" data-bs-theme="dark">
         <Container>
           <Nav className="me-auto display:flex">
             <Avatar src={moi} />
@@ -18,7 +18,7 @@ function Navbar() {
           </Nav>
         </Container>
       </Navbarr>
-    </>
+    </header>
   );
 }
 
