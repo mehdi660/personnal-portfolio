@@ -1,6 +1,8 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbarr from "react-bootstrap/Navbar";
+import Avatar from "@mui/joy/Avatar";
+import moi from "../assets/moi.jpg";
 
 function Navbar() {
   return (
@@ -8,7 +10,7 @@ function Navbar() {
       <Navbarr bg="dark" data-bs-theme="dark">
         <Container>
           <Nav className="me-auto display:flex">
-            <Nav.Link href="#home">Home</Nav.Link>
+            <Avatar src={moi} />
             <Nav.Link href="#about">About me</Nav.Link>
             <Nav.Link href="#skills">Skills</Nav.Link>
             <Nav.Link href="#project">Project</Nav.Link>

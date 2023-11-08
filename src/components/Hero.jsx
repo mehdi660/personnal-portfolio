@@ -6,7 +6,7 @@ const Hero = () => {
     <main>
       <div className="hero_bnr">
         <img src={bg} alt="stars" />
-        <h1>Welcome stranger !</h1>
+        <h1>Welcome to my world !</h1>
       </div>
     </main>
   );
