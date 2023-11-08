@@ -17,11 +17,11 @@ const About = () => {
         <p>
           Hello ! I'm Mehdi and I'm actually in a web developper formation !
           <br />
-          Passionate about web development, I am looking for a company for a
-          work-study or other employment contract. I started learning
-          development on my own, thanks to our wonderful tool which is the
-          internet, and I then followed web dev training at openclassrooms. So
-          there you have it, see you very soon I hope!
+          I'm Passionate about game, web development, music and I am looking for
+          a company for a work-study or other employment contract. I started
+          learning development on my own, thanks to our wonderful tool which is
+          the internet, and I then followed web dev training at openclassrooms.
+          So there you have it, see you very soon I hope!
         </p>
       </div>
     </section>
