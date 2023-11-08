@@ -1,3 +1,14 @@
 .about {
   background-color: #6e7073;
+  display: flex;
+  align-items: center;
+  padding: 70px;
+}
+
+.about h2 {
+  font-weight: bold;
+}
+
+.about_me {
+  margin-left: 10px;
 }
