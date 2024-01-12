@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/bg.css";
 import "./styles/about.css";
 import "./styles/index.css";
+import "./styles/skills.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
