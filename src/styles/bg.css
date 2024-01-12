@@ -2,7 +2,7 @@ main {
   height: 100vh;
   background-image: url("../assets/milky-way-5295160_1920.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center/fixed;
 }
 
 .hero_bnr {
