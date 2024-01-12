@@ -23,7 +23,7 @@ const Skills = () => {
               );
             })}
           </Row>
-          <h2>In coming...</h2>
+          <h2 className="incoming">In coming...</h2>
           <Row className="mt-3 align-items-center">
             {inComing.map((skills) => {
               return (
@@ -38,7 +38,7 @@ const Skills = () => {
           </Row>
           {resume && (
             <a href={resume} target="_blank" rel="noreferrer">
-              <Button size="lg" className="mt-5">
+              <Button color="ffbf00" size="lg" className="mt-5">
                 Resume
               </Button>
             </a>

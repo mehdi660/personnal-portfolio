@@ -6,6 +6,7 @@ import "./styles/bg.css";
 import "./styles/about.css";
 import "./styles/index.css";
 import "./styles/skills.css";
+import "./styles/project.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
