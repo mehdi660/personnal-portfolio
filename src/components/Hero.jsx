@@ -1,5 +1,4 @@
 import React from "react";
-import scroll from "../assets/scroll-bar.png";
 
 const Hero = () => {
   return (
@@ -7,7 +6,12 @@ const Hero = () => {
       <div className="hero_bnr">
         <h1>Welcome to my world !</h1>
         <p>Scroll down to learn more about me (:</p>
-        <img src={scroll} alt="scroll" width={50} />
+        <div class="scroll">
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+          <span class="text">Scroll down</span>
+        </div>
       </div>
     </main>
   );
