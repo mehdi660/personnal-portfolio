@@ -1,6 +1,6 @@
 import React from "react";
-import { skillData, inComing } from "../helpers/skill";
-import { Col, Container, Row } from "react-bootstrap";
+import { skillData, inComing, resume } from "../helpers/skill";
+import { Col, Container, Row, Button } from "react-bootstrap";
 import { Element } from "react-scroll";
 
 const Skills = () => {
@@ -36,6 +36,13 @@ const Skills = () => {
               );
             })}
           </Row>
+          {resume && (
+            <a href={resume} target="_blank" rel="noreferrer">
+              <Button size="lg" className="mt-5">
+                Resume
+              </Button>
+            </a>
+          )}
         </Container>
       </section>
     </Element>

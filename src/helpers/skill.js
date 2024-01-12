@@ -65,3 +65,6 @@ export const inComing = [
     name: "SQL",
   },
 ];
+
+export const resume =
+  "https://drive.google.com/file/d/1GbJcYDYmsqjVKzyTdaGPtYzRgQQQUyRB/view?usp=sharing";
