@@ -7,6 +7,12 @@
 
 .about h2 {
   font-weight: bold;
+  color: #5350a8;
+}
+
+.about p {
+  color: #5350a8;
+  font-size: 20px;
 }
 
 .about_me {
