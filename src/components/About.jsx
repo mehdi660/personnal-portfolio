@@ -15,13 +15,13 @@ const About = () => {
       <div className="about_me">
         <h2>About me</h2>
         <p>
-          Hello ! I'm Mehdi, I'm 21 and I live in Perpignan.
-          <br />
-          I'm Passionate about game, web development, music and I am looking for
-          a company for a work-study or other employment contract. I started
-          learning development on my own, thanks to our wonderful tool which is
-          the internet, and I then followed web dev training at openclassrooms.
-          So there you have it, see you very soon I hope!
+          Hello! My name is Mehdi, I'm 21 years old, and I was born on
+          26/09/2002 in Belfort. Since September 2022, I've started coding, and
+          since then, I haven't stopped. Coding, for me, is a form of relaxation
+          that allows me to unwind and think about something else, much like
+          sports or video games. I have a passion for creating new things,
+          solving problems, and the satisfaction of seeing the results of my
+          creations.
         </p>
       </div>
     </section>
