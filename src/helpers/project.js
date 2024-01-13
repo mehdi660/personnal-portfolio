@@ -15,6 +15,7 @@ export const nameData = [
       "A brand new project in collaboration with my father, centered around the theme of AI! The project is underway and is shaping up to be even more promising!",
     image: { mystere },
     online: false,
+    code: "???",
   },
   {
     id: 2,
@@ -24,6 +25,7 @@ export const nameData = [
     image: { debug },
     online: true,
     site: "https://debogging-77events.netlify.app",
+    code: "https://github.com/mehdi660/Deboging-77events",
   },
   {
     id: 3,
@@ -32,6 +34,7 @@ export const nameData = [
       "In this project, I learned how to display back end data on the interface via API calls, configure API routes for client/server communication, and implement data management with Redux to keep the front running ",
     image: { argent },
     online: false,
+    code: "https://github.com/mehdi660/ArgentBankProject",
   },
   {
     id: 4,
@@ -40,6 +43,7 @@ export const nameData = [
     image: { kasa },
     online: true,
     site: "https://kasa-location-oc.netlify.app",
+    code: "https://github.com/mehdi660/Kasa-V0-",
   },
   {
     id: 5,
@@ -49,6 +53,7 @@ export const nameData = [
     image: { seo },
     online: true,
     site: "ninna-carducci.netlify.app",
+    code: "https://github.com/mehdi660/Nina_Carducci_SEO",
   },
   {
     id: 6,
@@ -58,6 +63,7 @@ export const nameData = [
     image: { food },
     online: true,
     site: "https://ohmyfoood.netlify.app",
+    code: "https://github.com/mehdi660/OhMyFoodV1",
   },
   {
     id: 7,
@@ -67,6 +73,7 @@ export const nameData = [
     image: { booki },
     online: true,
     site: "https://booki-travel-agency.netlify.app",
+    code: "https://github.com/mehdi660/Cr-ez_la_page_d-accueil_d-une_agence_de_voyage_avec_HTML_-_CSS-P3-",
   },
   {
     id: 8,
@@ -75,5 +82,6 @@ export const nameData = [
     image: { quizz },
     online: true,
     site: "https://quizz-site-js.netlify.app/",
+    code: "https://github.com/mehdi660/Quizz-JS-fr-",
   },
 ];
