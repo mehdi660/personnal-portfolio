@@ -13,16 +13,15 @@ export const nameData = [
     name: "???",
     description:
       "A brand new project in collaboration with my father, centered around the theme of AI! The project is underway and is shaping up to be even more promising!",
-    image: { mystere },
+    image: mystere,
     online: false,
-    code: "???",
   },
   {
     id: 2,
     name: "Debogging-77events",
     description:
       "In this project, I learn how to use unit test and integration test with jest, the goal of this project was to find bugs and correct them ",
-    image: { debug },
+    image: debug,
     online: true,
     site: "https://debogging-77events.netlify.app",
     code: "https://github.com/mehdi660/Deboging-77events",
@@ -32,7 +31,7 @@ export const nameData = [
     name: "ArgentBankProject",
     description:
       "In this project, I learned how to display back end data on the interface via API calls, configure API routes for client/server communication, and implement data management with Redux to keep the front running ",
-    image: { argent },
+    image: argent,
     online: false,
     code: "https://github.com/mehdi660/ArgentBankProject",
   },
@@ -40,7 +39,7 @@ export const nameData = [
     id: 4,
     name: "Kasa",
     description: "In this project, I learned to use React for the first time",
-    image: { kasa },
+    image: kasa,
     online: true,
     site: "https://kasa-location-oc.netlify.app",
     code: "https://github.com/mehdi660/Kasa-V0-",
@@ -50,7 +49,7 @@ export const nameData = [
     name: "Nina_Carducci_SEO",
     description:
       "In this project, I learned how to optimize the performance of a website, with the lighthouse and wave tools ",
-    image: { seo },
+    image: seo,
     online: true,
     site: "ninna-carducci.netlify.app",
     code: "https://github.com/mehdi660/Nina_Carducci_SEO",
@@ -60,7 +59,7 @@ export const nameData = [
     name: "OhMyFoodV1",
     description:
       "In this project, I learned how to Implement CSS animations and Integrate a mobile-first mockup ",
-    image: { food },
+    image: food,
     online: true,
     site: "https://ohmyfoood.netlify.app",
     code: "https://github.com/mehdi660/OhMyFoodV1",
@@ -70,7 +69,7 @@ export const nameData = [
     name: "Booki",
     description:
       "In this projetc, I learned for the first time to use HTML and CSS",
-    image: { booki },
+    image: booki,
     online: true,
     site: "https://booki-travel-agency.netlify.app",
     code: "https://github.com/mehdi660/Cr-ez_la_page_d-accueil_d-une_agence_de_voyage_avec_HTML_-_CSS-P3-",
@@ -79,7 +78,7 @@ export const nameData = [
     id: 8,
     name: "Quizz",
     description: "A little side project where a little quizz game is available",
-    image: { quizz },
+    image: quizz,
     online: true,
     site: "https://quizz-site-js.netlify.app/",
     code: "https://github.com/mehdi660/Quizz-JS-fr-",

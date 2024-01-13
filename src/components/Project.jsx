@@ -9,11 +9,19 @@ import Typography from "@mui/material/Typography";
 
 const Project = () => {
   return (
-    <section className="project">
-      {" "}
-      {nameData.map((project) => {
-        return (
-          <Card sx={{ maxWidth: 345 }}>
+    <>
+      <h2>My project</h2>
+      <section
+        className="project"
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-around",
+        }}
+      >
+        {nameData.map((project) => (
+          <Card key={project.id} sx={{ maxWidth: 345, margin: 5 }}>
+            {" "}
             <CardMedia
               component="img"
               alt="project"
@@ -41,9 +49,9 @@ const Project = () => {
               )}
             </CardActions>
           </Card>
-        );
-      })}
-    </section>
+        ))}
+      </section>
+    </>
   );
 };
 
