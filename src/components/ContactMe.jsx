@@ -7,7 +7,8 @@ const ContactMe = () => {
     return <p>Thanks for your message !</p>;
   }
   return (
-    <form onSubmit={handleSubmit}>
+    <form id="contact" onSubmit={handleSubmit}>
+      <h2 id="contact-title">Contact me !</h2>
       <label htmlFor="email">Email Address</label>
       <input id="email" type="email" name="email" />
       <ValidationError prefix="Email" field="email" errors={state.errors} />
