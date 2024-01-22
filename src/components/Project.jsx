@@ -12,7 +12,7 @@ const Project = () => {
     <>
       <h2 id="title-project">My project</h2>
       <section
-        className="project"
+        id="project"
         style={{
           display: "flex",
           flexWrap: "wrap",
