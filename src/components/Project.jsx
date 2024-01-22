@@ -10,7 +10,7 @@ import Typography from "@mui/material/Typography";
 const Project = () => {
   return (
     <>
-      <h2>My project</h2>
+      <h2 id="title-project">My project</h2>
       <section
         className="project"
         style={{
@@ -20,7 +20,11 @@ const Project = () => {
         }}
       >
         {nameData.map((project) => (
-          <Card key={project.id} sx={{ maxWidth: 345, margin: 5 }}>
+          <Card
+            className="card"
+            key={project.id}
+            sx={{ maxWidth: 345, margin: 5 }}
+          >
             {" "}
             <CardMedia
               component="img"
@@ -38,7 +42,9 @@ const Project = () => {
             </CardContent>
             <CardActions>
               <Button size="small">
-                <a href={project.code}>Code</a>
+                <a href={project.code} target="blank_">
+                  Code
+                </a>
               </Button>
               {project.online ? (
                 <Button size="small">

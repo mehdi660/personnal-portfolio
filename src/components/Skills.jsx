@@ -38,7 +38,7 @@ const Skills = () => {
           </Row>
           {resume && (
             <a href={resume} target="_blank" rel="noreferrer">
-              <Button color="ffbf00" size="lg" className="mt-5">
+              <Button color="ffbf00" size="lg" className="mt-5 resume">
                 Resume
               </Button>
             </a>
