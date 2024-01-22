@@ -42,7 +42,9 @@ const Project = () => {
               </Button>
               {project.online ? (
                 <Button size="small">
-                  <a href={project.site}>Website</a>
+                  <a href={project.site} target="blank_">
+                    Website
+                  </a>
                 </Button>
               ) : (
                 ""

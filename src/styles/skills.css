@@ -7,3 +7,11 @@
 .incoming {
   margin-top: 50px;
 }
+
+.skill {
+  transition: all 0.2s ease-in-out;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+}

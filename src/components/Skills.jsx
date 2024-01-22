@@ -17,7 +17,7 @@ const Skills = () => {
                 <Col xs={4} key={skills.id} className="my-md-5 ">
                   <figure>
                     {skills.skill}
-                    <figcaption>{skills.name}</figcaption>
+                    <figcaption className="skills">{skills.name}</figcaption>
                   </figure>
                 </Col>
               );
@@ -30,7 +30,7 @@ const Skills = () => {
                 <Col xs={4} key={skills.id} className="my-md-5 ">
                   <figure>
                     {skills.skill}
-                    <figcaption>{skills.name}</figcaption>
+                    <figcaption className="skills">{skills.name}</figcaption>
                   </figure>
                 </Col>
               );
