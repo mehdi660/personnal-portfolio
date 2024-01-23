@@ -1,15 +1,20 @@
 .skills {
   background-color: #5350a8;
   color: #ffbf00;
-  padding: 55px;
+  padding: 70px;
 }
 
 .incoming {
   margin-top: 50px;
+  font-weight: bold;
 }
 
 .skill {
   transition: all 0.2s ease-in-out;
+}
+
+#skill-title {
+  font-weight: bold;
 }
 
 .skill:hover {

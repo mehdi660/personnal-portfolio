@@ -5,15 +5,16 @@ import moi from "../assets/moi.jpg";
 const About = () => {
   return (
     <section className="about">
-      <Avatar
-        src={moi}
-        alt="moi"
-        sx={{
-          "--Avatar-size": "20%",
-        }}
-      />
+      <h2>About me</h2>
+
       <div className="about_me">
-        <h2>About me</h2>
+        <Avatar
+          src={moi}
+          alt="moi"
+          sx={{
+            "--Avatar-size": "20%",
+          }}
+        />
         <p>
           Hello! My name is Mehdi, I'm 21 years old, and I was born on
           26/09/2002 in Belfort. Since September 2022, I've started coding, and

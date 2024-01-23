@@ -8,7 +8,7 @@ const Skills = () => {
     <Element name={"Skills"} id="skills">
       <section className="skills">
         <Container className="text-center">
-          <h2>Skills</h2>
+          <h2 id="skill-title">My skills</h2>
           <div className="underline"></div>
 
           <Row className="mt-3 align-items-center">

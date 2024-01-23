@@ -1,21 +1,23 @@
 .about {
   background-color: #ffbf00;
-  display: flex;
-  align-items: center;
+
   padding: 70px;
 }
 
 .about h2 {
   font-weight: bold;
   color: #5350a8;
+  text-align: center;
 }
 
 .about p {
   color: #5350a8;
   font-size: 20px;
+  margin-left: 20px;
 }
 
 .about_me {
-  margin-left: 50px;
-  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
