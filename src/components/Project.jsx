@@ -6,11 +6,13 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import Filter from "./Filter";
 
 const Project = () => {
   return (
-    <>
+    <div className="project">
       <h2 id="title-project">My project</h2>
+      <Filter />
       <section
         id="project"
         style={{
@@ -70,7 +72,7 @@ const Project = () => {
           </Card>
         ))}
       </section>
-    </>
+    </div>
   );
 };
 

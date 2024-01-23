@@ -36,7 +36,7 @@ export const nameData = [
     image: argent,
     online: false,
     code: "https://github.com/mehdi660/ArgentBankProject",
-    category: ["React", "HTML", "CSS", "JavaScript"],
+    category: ["React", "HTML", "CSS", "JavaScript", "SEO", "Redux"],
   },
   {
     id: 4,
@@ -57,7 +57,7 @@ export const nameData = [
     online: true,
     site: "ninna-carducci.netlify.app",
     code: "https://github.com/mehdi660/Nina_Carducci_SEO",
-    category: ["HTML", "CSS"],
+    category: ["HTML", "CSS", "SEO"],
   },
   {
     id: 6,
