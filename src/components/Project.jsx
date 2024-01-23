@@ -23,7 +23,13 @@ const Project = () => {
           <Card
             className="card"
             key={project.id}
-            sx={{ maxWidth: 345, margin: 5 }}
+            sx={{
+              maxWidth: 345,
+              margin: 5,
+              background: "#5350a8",
+              boxShadow:
+                "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;",
+            }}
           >
             {" "}
             <CardMedia
@@ -33,10 +39,15 @@ const Project = () => {
               image={project.image}
             />
             <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
+              <Typography
+                gutterBottom
+                variant="h5"
+                color="#ffbf00"
+                component="div"
+              >
                 {project.name}
               </Typography>
-              <Typography variant="body2" color="text.secondary">
+              <Typography variant="body2" color="#ffbf00">
                 {project.description}
               </Typography>
             </CardContent>

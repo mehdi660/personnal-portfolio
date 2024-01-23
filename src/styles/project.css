@@ -3,10 +3,20 @@
   padding: 20px;
 }
 
+#project a {
+  text-decoration: none;
+  color: #ffbf00;
+}
+
 #title-project {
   background: #ffbf00;
   margin: 0;
   text-align: center;
   padding-top: 40px;
   font-weight: bold;
+  color: #5350a8;
+}
+
+.card {
+  background: #000;
 }
