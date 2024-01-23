@@ -17,12 +17,12 @@ const About = () => {
         />
         <p>
           Hello! My name is Mehdi, I'm 21 years old, and I was born on
-          26/09/2002 in Belfort. Since September 2022, I've started coding, and
-          since then, I haven't stopped. Coding, for me, is a form of relaxation
-          that allows me to unwind and think about something else, much like
-          sports or video games. I have a passion for creating new things,
-          solving problems, and the satisfaction of seeing the results of my
-          creations.
+          26/09/2002 in Belfort (France). Since September 2022, I've started
+          coding, and since then, I haven't stopped. Coding, for me, is a form
+          of relaxation that allows me to unwind and think about something else,
+          much like sports or video games. I have a passion for creating new
+          things, solving problems, and the satisfaction of seeing the results
+          of my creations.
         </p>
       </div>
     </section>
