@@ -28,7 +28,7 @@ const Project = () => {
               margin: 5,
               background: "#5350a8",
               boxShadow:
-                "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;",
+                "  #bc8d00 10px -10px 0px -3px, #5350a8 10px -10px,#bc8d00 20px -20px 0px -3px, #5350a8 20px -20px, #bc8d00 30px -30px 0px -3px,#5350a8 30px -30px, #bc8d00 40px -40px 0px -3px,#5350a8 40px -40px;",
             }}
           >
             {" "}
