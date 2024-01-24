@@ -1,4 +1,3 @@
-import mystere from "../assets/mystere.jpg";
 import debug from "../assets/debug.jpg";
 import argent from "../assets/argent.jpg";
 import kasa from "../assets/kasa.jpg";

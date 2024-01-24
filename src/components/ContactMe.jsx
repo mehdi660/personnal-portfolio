@@ -33,7 +33,7 @@ const ContactMe = () => {
 
   return (
     <section id="contact">
-      <h2>Contact me !</h2>
+      <h2>Contact me 📩</h2>
       <form onSubmit={handleSubmit}>
         <label htmlFor="email">Email Address</label>
         <input

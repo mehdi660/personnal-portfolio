@@ -10,7 +10,7 @@ import Typography from "@mui/material/Typography";
 const Project = () => {
   return (
     <div className="project">
-      <h2 id="title-project">My project 👨🏻‍💻</h2>
+      <h2 id="title-project">My project 👨🏽‍💻</h2>
 
       <section
         id="project"
