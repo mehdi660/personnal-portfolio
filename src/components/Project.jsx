@@ -6,13 +6,12 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import Filter from "./Filter";
 
 const Project = (project) => {
   return (
     <div className="project">
       <h2 id="title-project">My project</h2>
-      <Filter />
+
       <section
         id="project"
         style={{
@@ -51,6 +50,10 @@ const Project = (project) => {
               </Typography>
               <Typography variant="body2" color="#ffbf00">
                 {proj.description}
+              </Typography>
+              <Typography variant="body2" color="#ffbf00">
+                <br />
+                <em>{proj.category}</em>
               </Typography>
             </CardContent>
             <CardActions>

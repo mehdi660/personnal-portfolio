@@ -15,7 +15,7 @@ export const nameData = [
       "A brand new project in collaboration with my father, centered around the theme of AI! The project is underway and is shaping up to be even more promising!",
     image: mystere,
     online: false,
-    category: ["NextJS", "HTML", "CSS", "JavaScript", "Tailwind"],
+    category: ["NextJS-", "HTML-", "CSS-", "JavaScript-", "Tailwind"],
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ export const nameData = [
     online: true,
     site: "https://debogging-77events.netlify.app",
     code: "https://github.com/mehdi660/Deboging-77events",
-    category: ["HTML", "CSS", "Testing", "JavaScript"],
+    category: ["HTML-", "CSS-", "Testing-", "JavaScript"],
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ export const nameData = [
     image: argent,
     online: false,
     code: "https://github.com/mehdi660/ArgentBankProject",
-    category: ["React", "HTML", "CSS", "JavaScript", "SEO", "Redux"],
+    category: ["React-", "HTML-", "CSS-", "JavaScript-", "SEO-", "Redux"],
   },
   {
     id: 4,
@@ -46,7 +46,7 @@ export const nameData = [
     online: true,
     site: "https://kasa-location-oc.netlify.app",
     code: "https://github.com/mehdi660/Kasa-V0-",
-    category: ["React", "HTML", "CSS"],
+    category: ["React-", "HTML-", "CSS"],
   },
   {
     id: 5,
@@ -57,7 +57,7 @@ export const nameData = [
     online: true,
     site: "ninna-carducci.netlify.app",
     code: "https://github.com/mehdi660/Nina_Carducci_SEO",
-    category: ["HTML", "CSS", "SEO"],
+    category: ["HTML-", "CSS-", "SEO"],
   },
   {
     id: 6,
@@ -68,7 +68,7 @@ export const nameData = [
     online: true,
     site: "https://ohmyfoood.netlify.app",
     code: "https://github.com/mehdi660/OhMyFoodV1",
-    category: ["HTML", "CSS"],
+    category: ["HTML-", "CSS"],
   },
   {
     id: 7,
@@ -79,7 +79,7 @@ export const nameData = [
     online: true,
     site: "https://booki-travel-agency.netlify.app",
     code: "https://github.com/mehdi660/Cr-ez_la_page_d-accueil_d-une_agence_de_voyage_avec_HTML_-_CSS-P3-",
-    category: ["HTML", "CSS"],
+    category: ["HTML-", "CSS"],
   },
   {
     id: 8,
@@ -89,6 +89,6 @@ export const nameData = [
     online: true,
     site: "https://quizz-site-js.netlify.app/",
     code: "https://github.com/mehdi660/Quizz-JS-fr-",
-    category: ["HTML", "CSS", "JavaScript"],
+    category: ["HTML-", "CSS-", "JavaScript"],
   },
 ];

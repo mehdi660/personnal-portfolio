@@ -8,7 +8,6 @@ import "./styles/index.css";
 import "./styles/skills.css";
 import "./styles/project.css";
 import "./styles/contact.css";
-import "./styles/filter.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
