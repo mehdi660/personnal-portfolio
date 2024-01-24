@@ -8,7 +8,7 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Filter from "./Filter";
 
-const Project = () => {
+const Project = (project) => {
   return (
     <div className="project">
       <h2 id="title-project">My project</h2>
@@ -21,10 +21,10 @@ const Project = () => {
           justifyContent: "space-around",
         }}
       >
-        {nameData.map((project) => (
+        {nameData.map((proj) => (
           <Card
             className="card"
-            key={project.id}
+            key={proj.id}
             sx={{
               maxWidth: 345,
               margin: 5,
@@ -38,7 +38,7 @@ const Project = () => {
               component="img"
               alt="project"
               height="140"
-              image={project.image}
+              image={proj.image}
             />
             <CardContent>
               <Typography
@@ -47,21 +47,21 @@ const Project = () => {
                 color="#ffbf00"
                 component="div"
               >
-                {project.name}
+                {proj.name}
               </Typography>
               <Typography variant="body2" color="#ffbf00">
-                {project.description}
+                {proj.description}
               </Typography>
             </CardContent>
             <CardActions>
               <Button size="small">
-                <a href={project.code} target="blank_">
+                <a href={proj.code} target="blank_">
                   Code
                 </a>
               </Button>
-              {project.online ? (
+              {proj.online ? (
                 <Button size="small">
-                  <a href={project.site} target="blank_">
+                  <a href={proj.site} target="blank_">
                     Website
                   </a>
                 </Button>
