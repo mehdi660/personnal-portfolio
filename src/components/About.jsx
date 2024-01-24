@@ -5,7 +5,7 @@ import moi from "../assets/moi.jpg";
 const About = () => {
   return (
     <section className="about">
-      <h2>About me</h2>
+      <h2>About me 🕶</h2>
 
       <div className="about_me">
         <Avatar
