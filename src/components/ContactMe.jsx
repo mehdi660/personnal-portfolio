@@ -32,31 +32,38 @@ const ContactMe = () => {
   }, [state.succeeded, state.failed, resetForm]);
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="email">Email Address</label>
-      <input
-        id="email"
-        type="email"
-        name="email"
-        required
-        pattern={String.raw`[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}`}
-        onInput={(e) => e.target.setCustomValidity("")}
-      />
-      <ValidationError prefix="Email" field="email" errors={state.errors} />
+    <section id="contact">
+      <h2>Contact me !</h2>
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="email">Email Address</label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          required
+          pattern={String.raw`[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}`}
+          onInput={(e) => e.target.setCustomValidity("")}
+        />
+        <ValidationError prefix="Email" field="email" errors={state.errors} />
 
-      <label htmlFor="message">Message</label>
-      <textarea
-        id="message"
-        name="message"
-        required
-        onInput={(e) => e.target.setCustomValidity("")}
-      />
-      <ValidationError prefix="Message" field="message" errors={state.errors} />
+        <label htmlFor="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          required
+          onInput={(e) => e.target.setCustomValidity("")}
+        />
+        <ValidationError
+          prefix="Message"
+          field="message"
+          errors={state.errors}
+        />
 
-      <button type="submit" disabled={state.submitting}>
-        Submit
-      </button>
-    </form>
+        <button type="submit" disabled={state.submitting}>
+          Submit
+        </button>
+      </form>
+    </section>
   );
 };
 

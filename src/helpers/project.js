@@ -8,15 +8,15 @@ import booki from "../assets/booki.jpg";
 import quizz from "../assets/quizz.jpg";
 
 export const nameData = [
-  {
-    id: 1,
-    name: "???",
-    description:
-      "A brand new project in collaboration with my father, centered around the theme of AI! The project is underway and is shaping up to be even more promising!",
-    image: mystere,
-    online: false,
-    category: ["NextJS-", "HTML-", "CSS-", "JavaScript-", "Tailwind"],
-  },
+  // {
+  //   id: 1,
+  //   name: "???",
+  //   description:
+  //     "A brand new project in collaboration with my father, centered around the theme of AI! The project is underway and is shaping up to be even more promising!",
+  //   image: mystere,
+  //   online: false,
+  //   category: ["NextJS-", "HTML-", "CSS-", "JavaScript-", "Tailwind"],
+  // },
   {
     id: 2,
     name: "Debogging-77events",

@@ -1,3 +1,9 @@
+#contact h2 {
+  text-align: center;
+  margin-top: 40px;
+  color: #ffbf00;
+}
+
 form {
   display: flex;
   align-items: center;
