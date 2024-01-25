@@ -1,8 +1,16 @@
 import React from "react";
 import Avatar from "@mui/joy/Avatar";
 import moi from "../assets/moi.jpg";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/all";
 
 const About = () => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.to(".box", {
+    scrollTrigger: ".box", // start animation when ".box" enters the viewport
+    x: 500,
+  });
   return (
     <section className="about">
       <h2>About me 🕶</h2>
