@@ -7,13 +7,27 @@ gsap.registerPlugin(TextPlugin);
 
 const Hero = () => {
   useEffect(() => {
-    gsap.to(".split", {
+    gsap.to(".h1", {
       stagger: 0.05,
       delay: 0.1,
       duration: 3,
-      ease: "power3.inOut", // Use a standard ease for the entire animation
+      ease: "power3.inOut",
+
       text: {
         value: "Welcome to my world !",
+      },
+    });
+  }, []);
+
+  useEffect(() => {
+    gsap.to(".p", {
+      stagger: 0.05,
+      delay: 2.5,
+      duration: 3,
+      ease: "power3.inOut",
+
+      text: {
+        value: "Scroll down to learn more about me (:",
       },
     });
   }, []);
@@ -21,8 +35,8 @@ const Hero = () => {
   return (
     <main>
       <div className="hero_bnr">
-        <h1 className="split"></h1>
-        <p>Scroll down to learn more about me (:</p>
+        <h1 className="h1"></h1>
+        <p className="p"></p>
 
         <div className="scroll">
           <div className="chevron"></div>
