@@ -3,9 +3,8 @@ import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import { TextPlugin } from "gsap/all";
 
-gsap.registerPlugin(TextPlugin);
-
 const Hero = () => {
+  gsap.registerPlugin(TextPlugin);
   useEffect(() => {
     gsap.to(".title", {
       stagger: 0.05,
