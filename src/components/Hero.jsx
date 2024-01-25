@@ -1,13 +1,13 @@
 /* eslint-disable jsx-a11y/heading-has-content */
 import React, { useEffect } from "react";
-import { gsap } from "gsap/all";
+import { gsap } from "gsap";
 import { TextPlugin } from "gsap/all";
 
 gsap.registerPlugin(TextPlugin);
 
 const Hero = () => {
   useEffect(() => {
-    gsap.to(".h1", {
+    gsap.to(".title", {
       stagger: 0.05,
       delay: 0.1,
       duration: 3,
@@ -20,7 +20,7 @@ const Hero = () => {
   }, []);
 
   useEffect(() => {
-    gsap.to(".p", {
+    gsap.to(".desc", {
       stagger: 0.05,
       delay: 2.5,
       duration: 3,
@@ -35,8 +35,8 @@ const Hero = () => {
   return (
     <main>
       <div className="hero_bnr">
-        <h1 className="h1"></h1>
-        <p className="p"></p>
+        <h1 className="title"></h1>
+        <p className="desc"></p>
 
         <div className="scroll">
           <div className="chevron"></div>
