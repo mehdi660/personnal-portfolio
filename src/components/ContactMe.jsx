@@ -1,9 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import Swal from "sweetalert2";
+import { Button } from "react-bootstrap";
 
 const ContactMe = () => {
   const [state, handleSubmit, resetForm] = useForm("xwkdylzz");
+  const [email, setEmail] = useState("");
 
   useEffect(() => {
     if (state.succeeded) {
@@ -31,22 +33,40 @@ const ContactMe = () => {
     };
   }, [state.succeeded, state.failed, resetForm]);
 
+  const validateEmail = (input) => {
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return emailRegex.test(input);
+  };
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+    if (!validateEmail(e.target.value)) {
+      e.target.setCustomValidity("Invalid email address");
+    } else {
+      e.target.setCustomValidity("");
+    }
+  };
+
   return (
     <section id="contact">
       <h2>Contact me 📩</h2>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="email">Email Address</label>
+        <label className="label" htmlFor="email">
+          Email Address
+        </label>
         <input
           id="email"
           type="email"
           name="email"
+          value={email}
           required
-          pattern={String.raw`[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}`}
-          onInput={(e) => e.target.setCustomValidity("")}
+          onInput={handleEmailChange}
         />
         <ValidationError prefix="Email" field="email" errors={state.errors} />
 
-        <label htmlFor="message">Message</label>
+        <label className="label" htmlFor="message">
+          Message
+        </label>
         <textarea
           id="message"
           name="message"
@@ -59,9 +79,15 @@ const ContactMe = () => {
           errors={state.errors}
         />
 
-        <button type="submit" disabled={state.submitting}>
+        <Button
+          type="submit"
+          disabled={state.submitting}
+          color="ffbf00"
+          size="lg"
+          className="mb-5 submit"
+        >
           Submit
-        </button>
+        </Button>
       </form>
     </section>
   );

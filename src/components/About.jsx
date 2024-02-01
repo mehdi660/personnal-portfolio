@@ -14,7 +14,7 @@ const About = () => {
       ".about_me",
       {
         opacity: 0,
-        x: 100, // Initial position to the right
+        x: 100,
       },
       {
         scrollTrigger: {
@@ -23,7 +23,7 @@ const About = () => {
           end: "bottom 20%",
           toggleActions: "play none none none",
         },
-        x: 0, // Final position
+        x: 0,
         opacity: 1,
       }
     );
