@@ -1,21 +1,39 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Avatar from "@mui/joy/Avatar";
 import moi from "../assets/moi.jpg";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
 const About = () => {
-  gsap.registerPlugin(ScrollTrigger);
+  const aboutMeRef = useRef(null);
 
-  gsap.to(".box", {
-    scrollTrigger: ".box", // start animation when ".box" enters the viewport
-    x: 500,
-  });
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.fromTo(
+      ".about_me",
+      {
+        opacity: 0,
+        x: 100, // Initial position to the right
+      },
+      {
+        scrollTrigger: {
+          trigger: aboutMeRef.current,
+          start: "top 60%",
+          end: "bottom 20%",
+          toggleActions: "play none none none",
+        },
+        x: 0, // Final position
+        opacity: 1,
+      }
+    );
+  }, [aboutMeRef]);
+
   return (
     <section className="about">
       <h2>About me 🕶</h2>
 
-      <div className="about_me">
+      <div className="about_me" ref={aboutMeRef}>
         <Avatar
           src={moi}
           alt="moi"

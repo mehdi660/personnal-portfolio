@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { nameData } from "../helpers/project";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
@@ -6,8 +6,36 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/all";
 
 const Project = () => {
+  const projectRef = useRef(null);
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.utils.toArray(".card").forEach((projectCard) => {
+      gsap.fromTo(
+        projectCard,
+        {
+          opacity: 0,
+          x: 100, // Position initiale à droite
+        },
+        {
+          scrollTrigger: {
+            trigger: projectCard,
+            start: "top 60%", // Modifiez ceci en fonction de vos besoins
+            end: "bottom 20%", // Modifiez ceci en fonction de vos besoins
+            toggleActions: "play none none none",
+          },
+          x: 0, // Position finale
+          opacity: 1,
+        }
+      );
+    });
+  }, [projectRef]);
+
   return (
     <div className="project">
       <h2 id="title-project">My project 👨🏽‍💻</h2>
@@ -32,7 +60,6 @@ const Project = () => {
                 "  #bc8d00 10px -10px 0px -3px, #5350a8 10px -10px,#bc8d00 20px -20px 0px -3px, #5350a8 20px -20px, #bc8d00 30px -30px 0px -3px,#5350a8 30px -30px, #bc8d00 40px -40px 0px -3px,#5350a8 40px -40px;",
             }}
           >
-            {" "}
             <CardMedia
               component="img"
               alt="project"
