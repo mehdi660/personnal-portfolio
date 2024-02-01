@@ -12,6 +12,11 @@ form {
   margin-top: 40px;
 }
 
+#message {
+  resize: none;
+  height: 150px;
+}
+
 #email,
 #message {
   width: 20%;
@@ -22,4 +27,8 @@ form {
 
 .label {
   color: #ffbf00;
+}
+
+.submit {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
