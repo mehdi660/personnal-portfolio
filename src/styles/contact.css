@@ -16,4 +16,10 @@ form {
 #message {
   width: 20%;
   margin-bottom: 20px;
+  border-radius: 5px;
+  border: #ffbf00;
+}
+
+.label {
+  color: #ffbf00;
 }
