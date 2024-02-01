@@ -21,7 +21,7 @@ const Skills = () => {
         {
           scrollTrigger: {
             trigger: skillsList,
-            start: "top 80%", // Modifiez ceci en fonction de vos besoins
+            start: "top 60%", // Modifiez ceci en fonction de vos besoins
             end: "bottom 20%", // Modifiez ceci en fonction de vos besoins
             toggleActions: "play none none none",
           },
