@@ -16,16 +16,16 @@ const Skills = () => {
         skillsList,
         {
           opacity: 0,
-          x: 100, // Position initiale à droite
+          x: 100,
         },
         {
           scrollTrigger: {
             trigger: skillsList,
-            start: "top 60%", // Modifiez ceci en fonction de vos besoins
-            end: "bottom 20%", // Modifiez ceci en fonction de vos besoins
+            start: "top 60%",
+            end: "bottom 20%",
             toggleActions: "play none none none",
           },
-          x: 0, // Position finale
+          x: 0,
           opacity: 1,
         }
       );

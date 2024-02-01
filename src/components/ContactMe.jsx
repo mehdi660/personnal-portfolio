@@ -1,9 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import Swal from "sweetalert2";
 
 const ContactMe = () => {
   const [state, handleSubmit, resetForm] = useForm("xwkdylzz");
+  const [email, setEmail] = useState("");
 
   useEffect(() => {
     if (state.succeeded) {
@@ -31,6 +32,20 @@ const ContactMe = () => {
     };
   }, [state.succeeded, state.failed, resetForm]);
 
+  const validateEmail = (input) => {
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return emailRegex.test(input);
+  };
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+    if (!validateEmail(e.target.value)) {
+      e.target.setCustomValidity("Invalid email address");
+    } else {
+      e.target.setCustomValidity("");
+    }
+  };
+
   return (
     <section id="contact">
       <h2>Contact me 📩</h2>
@@ -40,9 +55,9 @@ const ContactMe = () => {
           id="email"
           type="email"
           name="email"
+          value={email}
           required
-          pattern={String.raw`[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}`}
-          onInput={(e) => e.target.setCustomValidity("")}
+          onInput={handleEmailChange}
         />
         <ValidationError prefix="Email" field="email" errors={state.errors} />
 
