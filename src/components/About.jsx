@@ -14,7 +14,7 @@ const About = () => {
       ".about_me",
       {
         opacity: 0,
-        x: 50, // Initial position to the right
+        x: 100, // Initial position to the right
       },
       {
         scrollTrigger: {
