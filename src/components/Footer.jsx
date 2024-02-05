@@ -1,6 +1,6 @@
 import React from "react";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faGithub } from "@fortawesome/fa-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = () => {
   return (
@@ -8,12 +8,18 @@ const Footer = () => {
       <div className="footer_container">
         <ul>
           <li>
-            {/* <a href="http://">
+            <a href="https://github.com/mehdi660" target="blank_">
               <FontAwesomeIcon icon={faGithub} />
-            </a> */}
+            </a>
           </li>
-          <li></li>
-          <li></li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/mehdi-belgoumri/"
+              target="blank_"
+            >
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+          </li>
         </ul>
       </div>
     </footer>
