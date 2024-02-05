@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import Swal from "sweetalert2";
 import { Button } from "react-bootstrap";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ContactMe = () => {
   const [state, handleSubmit, resetForm] = useForm("xwkdylzz");
@@ -49,46 +51,61 @@ const ContactMe = () => {
 
   return (
     <section id="contact">
-      <h2>Contact me 📩</h2>
-      <form onSubmit={handleSubmit}>
-        <label className="label" htmlFor="email">
-          Email Address
-        </label>
-        <input
-          id="email"
-          type="email"
-          name="email"
-          value={email}
-          required
-          onInput={handleEmailChange}
-        />
-        <ValidationError prefix="Email" field="email" errors={state.errors} />
+      <h2>Hit me up ! 📩</h2>
+      <div id="contact-section">
+        <form onSubmit={handleSubmit}>
+          <label className="label" htmlFor="email">
+            Email Address
+          </label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            value={email}
+            required
+            onInput={handleEmailChange}
+          />
+          <ValidationError prefix="Email" field="email" errors={state.errors} />
 
-        <label className="label" htmlFor="message">
-          Message
-        </label>
-        <textarea
-          id="message"
-          name="message"
-          required
-          onInput={(e) => e.target.setCustomValidity("")}
-        />
-        <ValidationError
-          prefix="Message"
-          field="message"
-          errors={state.errors}
-        />
+          <label className="label" htmlFor="message">
+            Message
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            required
+            onInput={(e) => e.target.setCustomValidity("")}
+          />
+          <ValidationError
+            prefix="Message"
+            field="message"
+            errors={state.errors}
+          />
 
-        <Button
-          type="submit"
-          disabled={state.submitting}
-          color="ffbf00"
-          size="lg"
-          className="mb-5 submit"
-        >
-          Submit
-        </Button>
-      </form>
+          <Button
+            type="submit"
+            disabled={state.submitting}
+            color="ffbf00"
+            size="lg"
+            className="mb-5 submit"
+          >
+            Submit
+          </Button>
+        </form>
+        <div id="contact-info">
+          <h3>contact</h3>
+          <a href="mailto:mehdi.belgoumrii@gmail.com">
+            mehdi.belgoumrii@gmail.com
+          </a>
+          <p>+33 6 52 23 75 50</p>
+          <a
+            href="https://www.linkedin.com/in/mehdi-belgoumri/"
+            target="blank_"
+          >
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+        </div>
+      </div>
     </section>
   );
 };
