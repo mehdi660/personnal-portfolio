@@ -30,7 +30,7 @@ const About = () => {
   }, [aboutMeRef]);
 
   return (
-    <section className="about">
+    <section className="about" id="about">
       <h2>About me 🕶</h2>
 
       <div className="about_me" ref={aboutMeRef}>

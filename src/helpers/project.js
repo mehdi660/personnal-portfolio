@@ -4,7 +4,6 @@ import kasa from "../assets/kasa.jpg";
 import seo from "../assets/seo.jpg";
 import food from "../assets/food.jpg";
 import booki from "../assets/booki.jpg";
-import quizz from "../assets/quizz.jpg";
 
 export const nameData = [
   // {
@@ -79,15 +78,5 @@ export const nameData = [
     site: "https://booki-travel-agency.netlify.app",
     code: "https://github.com/mehdi660/Cr-ez_la_page_d-accueil_d-une_agence_de_voyage_avec_HTML_-_CSS-P3-",
     category: ["HTML-", "CSS"],
-  },
-  {
-    id: 8,
-    name: "Quizz",
-    description: "A little side project where a little quizz game is available",
-    image: quizz,
-    online: true,
-    site: "https://quizz-site-js.netlify.app/",
-    code: "https://github.com/mehdi660/Quizz-JS-fr-",
-    category: ["HTML-", "CSS-", "JavaScript"],
   },
 ];
