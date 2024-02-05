@@ -4,6 +4,14 @@
   justify-content: space-around;
 }
 
+#contact-info {
+  color: #ffbf00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 #contact h2 {
   text-align: center;
   margin-top: 40px;
@@ -16,6 +24,7 @@ form {
   justify-content: center;
   flex-direction: column;
   margin-top: 40px;
+  width: 20%;
 }
 
 #message {

@@ -93,17 +93,22 @@ const ContactMe = () => {
           </Button>
         </form>
         <div id="contact-info">
-          <h3>contact</h3>
+          <h3>Social media & contact</h3>
           <a href="mailto:mehdi.belgoumrii@gmail.com">
             mehdi.belgoumrii@gmail.com
           </a>
-          <p>+33 6 52 23 75 50</p>
+          <br />
           <a
             href="https://www.linkedin.com/in/mehdi-belgoumri/"
             target="blank_"
           >
-            <FontAwesomeIcon icon={faLinkedin} />
+            https://www.linkedin.com/in/mehdi-belgoumri/
           </a>
+          <br />
+          <a href="https://github.com/mehdi660" target="blank_">
+            https://github.com/mehdi660
+          </a>
+          <p>+33 6 52 23 75 50</p>
         </div>
       </div>
     </section>
