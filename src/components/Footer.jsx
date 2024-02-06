@@ -9,7 +9,7 @@ const Footer = () => {
         <ul>
           <li>
             <a href="https://github.com/mehdi660" target="blank_">
-              <FontAwesomeIcon icon={faGithub} />
+              <FontAwesomeIcon color="#5350a8" size="3x" icon={faGithub} />
             </a>
           </li>
           <li>
@@ -17,10 +17,13 @@ const Footer = () => {
               href="https://www.linkedin.com/in/mehdi-belgoumri/"
               target="blank_"
             >
-              <FontAwesomeIcon icon={faLinkedin} />
+              <FontAwesomeIcon color="#5350a8" size="3x" icon={faLinkedin} />
             </a>
           </li>
         </ul>
+        <div className="idk">
+          <p>made with 💜 by @mehdi66</p>
+        </div>
       </div>
     </footer>
   );
