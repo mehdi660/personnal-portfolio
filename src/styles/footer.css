@@ -4,11 +4,14 @@ footer {
 
 footer ul {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
 footer li {
   list-style: none;
-  padding: 20px;
+  margin-right: 20px;
 }
 
 .footer_container {
