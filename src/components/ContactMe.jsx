@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import Swal from "sweetalert2";
 import { Button } from "react-bootstrap";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ContactMe = () => {
   const [state, handleSubmit, resetForm] = useForm("xwkdylzz");
@@ -108,6 +106,7 @@ const ContactMe = () => {
           <a href="https://github.com/mehdi660" target="blank_">
             https://github.com/mehdi660
           </a>
+          <br />
           <p>+33 6 52 23 75 50</p>
         </div>
       </div>

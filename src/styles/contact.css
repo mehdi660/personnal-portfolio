@@ -12,6 +12,10 @@
   flex-direction: column;
 }
 
+#contact-info h3 {
+  text-align: center;
+}
+
 #contact h2 {
   text-align: center;
   margin-top: 40px;
