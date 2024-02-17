@@ -91,23 +91,13 @@ const ContactMe = () => {
           </Button>
         </form>
         <div id="contact-info">
-          <h3>Social media & contact</h3>
+          <h3>Contact</h3>
           <a href="mailto:mehdi.belgoumrii@gmail.com">
             mehdi.belgoumrii@gmail.com
           </a>
           <br />
-          <a
-            href="https://www.linkedin.com/in/mehdi-belgoumri/"
-            target="blank_"
-          >
-            https://www.linkedin.com/in/mehdi-belgoumri/
-          </a>
-          <br />
-          <a href="https://github.com/mehdi660" target="blank_">
-            https://github.com/mehdi660
-          </a>
-          <br />
-          <p>+33 6 52 23 75 50</p>
+
+          <a href="tel:+06 52 23 75 50">06 52 23 75 50</a>
         </div>
       </div>
     </section>
