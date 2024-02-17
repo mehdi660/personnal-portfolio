@@ -135,3 +135,12 @@ main {
     padding-right: 30px;
   }
 }
+
+@media only screen and (max-width: 425px) {
+  .hero_bnr h1 {
+    font-size: 24px;
+  }
+  .hero_bnr p {
+    font-size: 14px;
+  }
+}

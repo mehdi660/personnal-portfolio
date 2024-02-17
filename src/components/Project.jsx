@@ -53,7 +53,8 @@ const Project = () => {
             className="card"
             key={proj.id}
             sx={{
-              maxWidth: 345,
+              width: "100%",
+              maxWidth: 500,
               margin: 5,
               background: "#5350a8",
               boxShadow:
