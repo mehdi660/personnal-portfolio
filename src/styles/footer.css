@@ -21,3 +21,8 @@ footer li {
   flex-direction: column;
   color: #5350a8;
 }
+
+.dark-mode {
+  background: #333; /* Couleur de fond sombre */
+  color: #fff; /* Couleur du texte clair */
+}

@@ -113,3 +113,12 @@ main {
     opacity: 1;
   }
 }
+
+@media only screen and (max-width: 1024px) {
+  .hero_bnr h1 {
+    font-size: 50px;
+  }
+  .hero_bnr p {
+    font-size: 40px;
+  }
+}
