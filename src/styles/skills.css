@@ -24,3 +24,11 @@
 .resume {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
+
+@media only screen and (max-width: 1024px) {
+  .skills {
+    background-color: #5350a8;
+    color: #ffbf00;
+    padding: 40px;
+  }
+}
