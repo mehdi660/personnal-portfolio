@@ -122,3 +122,16 @@ main {
     font-size: 40px;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .hero_bnr h1 {
+    font-size: 35px;
+  }
+  .hero_bnr p {
+    font-size: 20px;
+  }
+  .hero_bnr {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}

@@ -34,6 +34,7 @@
 @media only screen and (max-width: 768px) {
   .skills {
     padding: 10px;
+    font-size: 13px;
   }
   #skill-title {
     margin-top: 30px;
