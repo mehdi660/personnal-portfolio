@@ -35,6 +35,7 @@ const About = () => {
 
       <div className="about_me" ref={aboutMeRef}>
         <Avatar
+          id="avatar"
           src={moi}
           alt="moi"
           sx={{
