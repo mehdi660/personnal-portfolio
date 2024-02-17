@@ -27,8 +27,16 @@
 
 @media only screen and (max-width: 1024px) {
   .skills {
-    background-color: #5350a8;
-    color: #ffbf00;
     padding: 40px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .skills {
+    padding: 10px;
+  }
+  #skill-title {
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
