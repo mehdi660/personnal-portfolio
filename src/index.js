@@ -9,6 +9,7 @@ import "./styles/skills.css";
 import "./styles/project.css";
 import "./styles/contact.css";
 import "./styles/footer.css";
+import "./styles/nav.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
