@@ -1,18 +1,16 @@
 import React, { useState } from "react";
 
 const Dark = () => {
-  const [darkBtn, setDarkBtn] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
 
-  function toggle() {
-    if (!darkBtn) {
-      setDarkBtn(true);
-    } else {
-      setDarkBtn(false);
-    }
-  }
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+    console.log("true");
+  };
+
   return (
-    <div>
-      <button onClick={toggle}>Dark</button>
+    <div className={darkMode ? "dark" : "light"}>
+      <button onClick={toggleDarkMode}>Toggle Dark Mode</button>
     </div>
   );
 };

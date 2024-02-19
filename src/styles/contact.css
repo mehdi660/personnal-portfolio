@@ -1,11 +1,10 @@
-#contact-section {
+.contact-section {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
 #contact-info {
-  color: #ffbf00;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,6 +19,15 @@
   text-align: center;
   margin-top: 40px;
   color: #ffbf00;
+}
+
+.dark {
+  border: 3px solid red;
+  color: blue;
+}
+
+.light {
+  color: blueviolet;
 }
 
 form {

@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import Swal from "sweetalert2";
 import { Button } from "react-bootstrap";
+import Dark from "./Dark";
 
-const ContactMe = () => {
+const ContactMe = ({ darkMode }) => {
   const [state, handleSubmit, resetForm] = useForm("xwkdylzz");
   const [email, setEmail] = useState("");
 
@@ -49,8 +50,12 @@ const ContactMe = () => {
 
   return (
     <section id="contact">
+      <Dark />
       <h2>Hit me up ! 📩</h2>
-      <div id="contact-section">
+      <div
+        id="contact-section"
+        className={`contact-section ${darkMode ? "dark" : "light"}`}
+      >
         <form onSubmit={handleSubmit}>
           <label className="label" htmlFor="email">
             Email Address
@@ -83,9 +88,9 @@ const ContactMe = () => {
           <Button
             type="submit"
             disabled={state.submitting}
-            color="ffbf00"
+            variant="warning" // Utiliser variant au lieu de color
             size="lg"
-            className="mb-5 submit"
+            className={`mb-5 submit ${darkMode ? "dark" : "light"}`}
           >
             Submit
           </Button>
