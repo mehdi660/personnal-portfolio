@@ -10,6 +10,7 @@ import "./styles/project.css";
 import "./styles/contact.css";
 import "./styles/footer.css";
 import "./styles/nav.css";
+import "./styles/dark.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

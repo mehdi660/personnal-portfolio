@@ -21,15 +21,6 @@
   color: #ffbf00;
 }
 
-.dark {
-  border: 3px solid red;
-  color: blue;
-}
-
-.light {
-  color: blueviolet;
-}
-
 form {
   display: flex;
   align-items: center;

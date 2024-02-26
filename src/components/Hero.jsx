@@ -2,8 +2,9 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import { TextPlugin } from "gsap/all";
+import "../styles/dark.css";
 
-const Hero = () => {
+const Hero = ({ darkMode }) => {
   gsap.registerPlugin(TextPlugin);
   useEffect(() => {
     gsap.to(".title", {
@@ -33,7 +34,7 @@ const Hero = () => {
 
   return (
     <main>
-      <div className="hero_bnr">
+      <div className={`hero_bnr ${darkMode ? "dark" : "light"}`}>
         <h1 className="title"></h1>
         <p className="desc"></p>
 

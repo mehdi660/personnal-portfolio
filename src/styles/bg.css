@@ -1,8 +1,15 @@
 main {
   height: 100vh;
-  background-color: #5350a8;
+
   background-size: cover;
   background-position: center/fixed;
+}
+
+.dark {
+  color: #666;
+}
+.light {
+  color: #ffbf00;
 }
 
 .hero_bnr {
@@ -18,7 +25,7 @@ main {
 .hero_bnr h1 {
   z-index: 100;
   font-size: 100px;
-  color: #ffbf00;
+
   font-family: "DM Sans", sans-serif;
   font-weight: bold;
 
@@ -28,7 +35,6 @@ main {
 .hero_bnr p {
   z-index: 100;
   font-weight: bold;
-  color: #ffbf00;
 
   font-size: 50px;
 }

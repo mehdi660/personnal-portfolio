@@ -4,7 +4,7 @@ import moi from "../assets/moi.jpg";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
-const About = () => {
+const About = ({ darkMode }) => {
   const aboutMeRef = useRef(null);
 
   useEffect(() => {
@@ -30,7 +30,7 @@ const About = () => {
   }, [aboutMeRef]);
 
   return (
-    <section className="about" id="about">
+    <section className={`about ${darkMode ? "light" : "dark"}`} id="about">
       <h2>About me 🕶</h2>
 
       <div className="about_me" ref={aboutMeRef}>

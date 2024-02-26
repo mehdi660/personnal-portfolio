@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import Swal from "sweetalert2";
 import { Button } from "react-bootstrap";
-import Dark from "./Dark";
+
+import "../styles/contact.css";
 
 const ContactMe = ({ darkMode }) => {
   const [state, handleSubmit, resetForm] = useForm("xwkdylzz");
@@ -50,7 +51,6 @@ const ContactMe = ({ darkMode }) => {
 
   return (
     <section id="contact">
-      <Dark />
       <h2>Hit me up ! 📩</h2>
       <div
         id="contact-section"

@@ -1,11 +1,15 @@
 import React, { useState } from "react";
+import "../styles/bg.css";
 
 const Dark = () => {
   const [darkMode, setDarkMode] = useState(false);
 
   const toggleDarkMode = () => {
+    if (!darkMode) {
+      document.body.classList.toggle("dark");
+    }
     setDarkMode(!darkMode);
-    console.log("true");
+    console.log(darkMode);
   };
 
   return (
