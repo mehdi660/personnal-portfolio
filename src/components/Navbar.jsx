@@ -7,7 +7,10 @@ import moi from "../assets/moi.jpg";
 function Navbar() {
   return (
     <header>
-      <Navbarr data-bs-theme="dark">
+      <Navbarr
+        data-bs-theme="dark"
+        style={{ boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)" }}
+      >
         <Container className="d-flex justify-content-center">
           <Nav className="me-auto d-flex align-items-center">
             <Avatar src={moi} alt="moi" />
