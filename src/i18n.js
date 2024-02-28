@@ -54,7 +54,7 @@ i18n
           aboutme_title: "À propos de moi🕶",
           aboutme_desc:
             "Bonjour ! Je m’appelle Mehdi, j’ai 21 ans et je suis né le 26/09/2002 à Belfort. Depuis septembre 2022, j'ai commencé à écrire du code, et depuis lors, je n'ai jamais arrêté. Pour moi, écrire du code est une forme de relaxation qui me permet de me détendre et de penser à autre chose, un peu comme le sport ou les jeux vidéo. J'ai une passion pour la création de nouvelles choses, la résolution de problèmes et la satisfaction de voir le résultat de mes créations.",
-          myskills_title: "mes skills 💪🏻",
+          myskills_title: "Mes skills 💪🏻",
           myskills_incoming: "À venir...",
           myskills_resume: "CV",
           myproject_title: "Mes projets 🚀",
