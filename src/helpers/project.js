@@ -16,7 +16,7 @@ export const nameData = [
   //   category: ["NextJS-", "HTML-", "CSS-", "JavaScript-", "Tailwind"],
   // },
   {
-    id: 2,
+    id: "debog",
     name: "Debogging-77events",
     description:
       "In this project, I learn how to use unit test and integration test with jest, the goal of this project was to find bugs and correct them ",
@@ -27,7 +27,7 @@ export const nameData = [
     category: ["HTML-", "CSS-", "Testing-", "JavaScript"],
   },
   {
-    id: 3,
+    id: "argent",
     name: "ArgentBankProject",
     description:
       "In this project, I learned how to display back end data on the interface via API calls, configure API routes for client/server communication, and implement data management with Redux to keep the front running ",
@@ -37,7 +37,7 @@ export const nameData = [
     category: ["React-", "HTML-", "CSS-", "JavaScript-", "SEO-", "Redux"],
   },
   {
-    id: 4,
+    id: "kasa",
     name: "Kasa",
     description: "In this project, I learned to use React for the first time",
     image: kasa,
@@ -47,7 +47,7 @@ export const nameData = [
     category: ["React-", "HTML-", "CSS"],
   },
   {
-    id: 5,
+    id: "nina",
     name: "Nina_Carducci_SEO",
     description:
       "In this project, I learned how to optimize the performance of a website, with the lighthouse and wave tools ",
@@ -58,7 +58,7 @@ export const nameData = [
     category: ["HTML-", "CSS-", "SEO"],
   },
   {
-    id: 6,
+    id: "omf",
     name: "OhMyFoodV1",
     description:
       "In this project, I learned how to Implement CSS animations and Integrate a mobile-first mockup ",
@@ -69,7 +69,7 @@ export const nameData = [
     category: ["HTML-", "CSS"],
   },
   {
-    id: 7,
+    id: "booki",
     name: "Booki",
     description:
       "In this projetc, I learned for the first time to use HTML and CSS",

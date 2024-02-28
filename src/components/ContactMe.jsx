@@ -2,8 +2,11 @@ import React, { useEffect, useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import Swal from "sweetalert2";
 import { Button } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 
 const ContactMe = () => {
+  const { t } = useTranslation();
+
   const [state, handleSubmit, resetForm] = useForm("xwkdylzz");
   const [email, setEmail] = useState("");
 

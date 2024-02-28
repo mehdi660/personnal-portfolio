@@ -73,7 +73,7 @@ i18n
           hmu_title: "Contactez moi !  📞",
           hmu_mail: "Adresse mail",
           hmu_submit: "Envoyer",
-          footer_made: "fait avec 💜 par @mehdi660",
+          footer_made: "Fait avec 💜 par @mehdi660",
         },
       },
     },
