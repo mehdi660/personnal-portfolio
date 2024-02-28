@@ -1,8 +1,11 @@
 import React from "react";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer>
       <div className="footer_container">
@@ -22,7 +25,7 @@ const Footer = () => {
           </li>
         </ul>
         <div className="idk">
-          <p>made with 💜 by @mehdi660</p>
+          <p>{t("footer_made")}</p>
         </div>
       </div>
     </footer>

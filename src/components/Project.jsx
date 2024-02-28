@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import { nameData } from "../helpers/project";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
@@ -10,6 +11,8 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
 const Project = () => {
+  const { t } = useTranslation();
+
   const projectRef = useRef(null);
 
   useEffect(() => {
@@ -29,7 +32,7 @@ const Project = () => {
             end: "bottom 20%",
             toggleActions: "play none none none",
           },
-          x: 0, // Position finale
+          x: 0,
           opacity: 1,
         }
       );
@@ -38,7 +41,7 @@ const Project = () => {
 
   return (
     <div className="project">
-      <h2 id="title-project">My project 👨🏽‍💻</h2>
+      <h2 id="title-project">{t("myproject_title")}</h2>
 
       <section
         id="project"
@@ -77,7 +80,7 @@ const Project = () => {
                 {proj.name}
               </Typography>
               <Typography variant="body2" color="#ffbf00">
-                {proj.description}
+                {t(`myproject_${proj.id}`)} {/* Utilisez t() ici */}
               </Typography>
               <Typography variant="body2" color="#ffbf00">
                 <br />
@@ -93,7 +96,7 @@ const Project = () => {
               {proj.online ? (
                 <Button size="small">
                   <a href={proj.site} target="blank_">
-                    Website
+                    Demo
                   </a>
                 </Button>
               ) : (

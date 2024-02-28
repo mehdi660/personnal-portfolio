@@ -4,8 +4,11 @@ import { Col, Container, Row, Button } from "react-bootstrap";
 import { Element } from "react-scroll";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import { useTranslation } from "react-i18next";
 
 const Skills = () => {
+  const { t } = useTranslation();
+
   const skillRef = useRef(null);
 
   useEffect(() => {
@@ -36,7 +39,7 @@ const Skills = () => {
     <Element name={"Skills"} id="skills">
       <section className="skills">
         <Container className="text-center">
-          <h2 id="skill-title">My skills 💪🏻</h2>
+          <h2 id="skill-title">{t("myskills_title")}</h2>
           <div className="underline"></div>
 
           <Row className="mt-3 align-items-center skills-list">
@@ -51,7 +54,7 @@ const Skills = () => {
               );
             })}
           </Row>
-          <h2 className="incoming">In coming...</h2>
+          <h2 className="incoming">{t("myskills_incoming")}</h2>
           <Row className="mt-3 align-items-center skills-list">
             {inComing.map((skills) => {
               return (
@@ -69,7 +72,7 @@ const Skills = () => {
           {resume && (
             <a href={resume} target="_blank" rel="noreferrer">
               <Button color="ffbf00" size="lg" className="mt-5 resume">
-                Resume
+                {t("myskills_resume")}
               </Button>
             </a>
           )}

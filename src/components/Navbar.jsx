@@ -3,8 +3,11 @@ import Nav from "react-bootstrap/Nav";
 import Navbarr from "react-bootstrap/Navbar";
 import Avatar from "@mui/joy/Avatar";
 import moi from "../assets/moi.jpg";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 function Navbar() {
+  const { t } = useTranslation();
   return (
     <header>
       <Navbarr
@@ -12,19 +15,20 @@ function Navbar() {
         style={{ boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)" }}
       >
         <Container className="d-flex justify-content-center">
+          <LanguageSwitcher />
           <Nav className="me-auto d-flex align-items-center">
             <Avatar src={moi} alt="moi" />
             <Nav.Link className="a_nav" href="#about">
-              About me
+              {t("aboutme_nav")}
             </Nav.Link>
             <Nav.Link className="a_nav" href="#skills">
-              Skills
+              {t("skills_nav")}
             </Nav.Link>
             <Nav.Link className="a_nav" href="#project">
-              Project
+              {t("project_nav")}
             </Nav.Link>
             <Nav.Link className="a_nav" href="#contact">
-              Contact
+              {t("contact_nav")}
             </Nav.Link>
           </Nav>
         </Container>

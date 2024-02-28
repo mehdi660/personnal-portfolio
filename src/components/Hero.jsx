@@ -2,8 +2,10 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import { TextPlugin } from "gsap/all";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const { t } = useTranslation();
   gsap.registerPlugin(TextPlugin);
   useEffect(() => {
     gsap.to(".title", {
@@ -13,10 +15,10 @@ const Hero = () => {
       ease: "power3.inOut",
 
       text: {
-        value: "Welcome to my world !",
+        value: t("welcome"),
       },
     });
-  }, []);
+  }, [t]);
 
   useEffect(() => {
     gsap.to(".desc", {
@@ -26,10 +28,10 @@ const Hero = () => {
       ease: "power3.inOut",
 
       text: {
-        value: "Scroll down to learn more about me (:",
+        value: t("scroll"),
       },
     });
-  }, []);
+  }, [t]);
 
   return (
     <main>

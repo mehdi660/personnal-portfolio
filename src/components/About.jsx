@@ -3,8 +3,10 @@ import Avatar from "@mui/joy/Avatar";
 import moi from "../assets/moi.jpg";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const { t } = useTranslation();
   const aboutMeRef = useRef(null);
 
   useEffect(() => {
@@ -31,7 +33,7 @@ const About = () => {
 
   return (
     <section className="about" id="about">
-      <h2>About me 🕶</h2>
+      <h2>{t("aboutme_nav")}</h2>
 
       <div className="about_me" ref={aboutMeRef}>
         <Avatar
@@ -42,15 +44,7 @@ const About = () => {
             "--Avatar-size": "20%",
           }}
         />
-        <p>
-          Hello! My name is Mehdi, I'm 21 years old, and I was born on
-          26/09/2002 in Belfort (France). Since September 2022, I've started
-          coding, and since then, I haven't stopped. Coding, for me, is a form
-          of relaxation that allows me to unwind and think about something else,
-          much like sports or video games. I have a passion for creating new
-          things, solving problems, and the satisfaction of seeing the results
-          of my creations.
-        </p>
+        <p>{t("aboutme_desc")}</p>
       </div>
     </section>
   );
