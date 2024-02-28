@@ -7,6 +7,7 @@ import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 function Navbar() {
+  const { t } = useTranslation();
   return (
     <header>
       <Navbarr
@@ -18,16 +19,16 @@ function Navbar() {
           <Nav className="me-auto d-flex align-items-center">
             <Avatar src={moi} alt="moi" />
             <Nav.Link className="a_nav" href="#about">
-              About me
+              {t("aboutme_nav")}
             </Nav.Link>
             <Nav.Link className="a_nav" href="#skills">
-              Skills
+              {t("skills_nav")}
             </Nav.Link>
             <Nav.Link className="a_nav" href="#project">
-              Project
+              {t("project_nav")}
             </Nav.Link>
             <Nav.Link className="a_nav" href="#contact">
-              Contact
+              {t("contact_nav")}
             </Nav.Link>
           </Nav>
         </Container>

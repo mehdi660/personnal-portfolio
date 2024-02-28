@@ -12,12 +12,18 @@ i18n
     resources: {
       en: {
         translation: {
-          greeting: "Hello world",
+          aboutme_nav: "About me",
+          skills_nav: "Skills",
+          project_nav: "Project",
+          contact_nav: "Contact",
         },
       },
       fr: {
         translation: {
-          greeting: "Bonjour le monde",
+          aboutme_nav: "À propos de moi",
+          skills_nav: "Skill",
+          project_nav: "Projet",
+          contact_nav: "Contact",
         },
       },
     },
