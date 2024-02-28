@@ -52,11 +52,11 @@ const ContactMe = () => {
 
   return (
     <section id="contact">
-      <h2>Hit me up ! 📩</h2>
+      <h2>{t("hmu_title")}</h2>
       <div id="contact-section">
         <form onSubmit={handleSubmit}>
           <label className="label" htmlFor="email">
-            Email Address
+            {t("hmu_mail")}
           </label>
           <input
             id="email"
@@ -90,7 +90,7 @@ const ContactMe = () => {
             size="lg"
             className="mb-5 submit"
           >
-            Submit
+            {t("hmu_submit")}
           </Button>
         </form>
         <div id="contact-info">
