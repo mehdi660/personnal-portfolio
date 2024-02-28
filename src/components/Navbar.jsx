@@ -3,6 +3,8 @@ import Nav from "react-bootstrap/Nav";
 import Navbarr from "react-bootstrap/Navbar";
 import Avatar from "@mui/joy/Avatar";
 import moi from "../assets/moi.jpg";
+// import { useTranslation } from "react-i18next";
+// import LanguageSwitcher from "./LanguageSwitcher";
 
 function Navbar() {
   return (
