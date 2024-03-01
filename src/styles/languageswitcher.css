@@ -10,6 +10,7 @@
   width: 40px;
   color: #ffbf00;
   transition: 0.3s;
+  text-align: center;
 }
 
 .btn_switch:hover {
