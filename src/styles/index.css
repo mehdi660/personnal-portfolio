@@ -6,6 +6,7 @@ body {
   background-color: #434186;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  min-width: 320px;
 }
 
 code {
