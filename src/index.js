@@ -11,7 +11,8 @@ import "./styles/project.css";
 import "./styles/contact.css";
 import "./styles/footer.css";
 import "./styles/nav.css";
-import i18n from "./i18n"; // Assurez-vous que le chemin est correct
+import i18n from "./i18n";
+import "./styles/languageswitcher.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

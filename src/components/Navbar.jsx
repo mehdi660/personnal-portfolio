@@ -15,9 +15,8 @@ function Navbar() {
         style={{ boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)" }}
       >
         <Container className="d-flex justify-content-center">
-          <LanguageSwitcher />
           <Nav className="me-auto d-flex align-items-center">
-            <Avatar src={moi} alt="moi" />
+            <Avatar className="avatar" src={moi} alt="moi" />
             <Nav.Link className="a_nav" href="#about">
               {t("aboutme_nav")}
             </Nav.Link>
@@ -32,6 +31,7 @@ function Navbar() {
             </Nav.Link>
           </Nav>
         </Container>
+        <LanguageSwitcher />
       </Navbarr>
     </header>
   );

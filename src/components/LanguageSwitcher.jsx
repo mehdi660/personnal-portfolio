@@ -9,9 +9,13 @@ const LanguageSwitcher = () => {
   };
 
   return (
-    <div>
-      <button onClick={() => changeLanguage("en")}>English</button>
-      <button onClick={() => changeLanguage("fr")}>French</button>
+    <div className="btn_switcher">
+      <button id="en" onClick={() => changeLanguage("en")}>
+        En
+      </button>
+      <button id="fr" onClick={() => changeLanguage("fr")}>
+        Fr
+      </button>
     </div>
   );
 };
