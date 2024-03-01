@@ -24,3 +24,9 @@
 .project {
   background: #ffbf00;
 }
+
+@media (max-width: 425px) {
+  .desc-proj {
+    font-size: 12px;
+  }
+}

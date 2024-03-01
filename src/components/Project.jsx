@@ -79,8 +79,8 @@ const Project = () => {
               >
                 {proj.name}
               </Typography>
-              <Typography variant="body2" color="#ffbf00">
-                {t(`myproject_${proj.id}`)} {/* Utilisez t() ici */}
+              <Typography className="desc-proj" variant="body2" color="#ffbf00">
+                {t(`myproject_${proj.id}`)}
               </Typography>
               <Typography variant="body2" color="#ffbf00">
                 <br />
