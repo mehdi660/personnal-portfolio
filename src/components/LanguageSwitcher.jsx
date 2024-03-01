@@ -10,10 +10,18 @@ const LanguageSwitcher = () => {
 
   return (
     <div className="btn_switcher">
-      <button id="en" onClick={() => changeLanguage("en")}>
+      <button
+        className="btn_switch"
+        id="en"
+        onClick={() => changeLanguage("en")}
+      >
         En
       </button>
-      <button id="fr" onClick={() => changeLanguage("fr")}>
+      <button
+        className="btn_switch"
+        id="fr"
+        onClick={() => changeLanguage("fr")}
+      >
         Fr
       </button>
     </div>

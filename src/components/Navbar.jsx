@@ -1,3 +1,4 @@
+import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbarr from "react-bootstrap/Navbar";
@@ -16,7 +17,9 @@ function Navbar() {
       >
         <Container className="d-flex justify-content-center">
           <Nav className="me-auto d-flex align-items-center">
-            <Avatar className="avatar" src={moi} alt="moi" />
+            <div className="avatar-container">
+              <Avatar className="avatar" src={moi} alt="moi" />
+            </div>
             <Nav.Link className="a_nav" href="#about">
               {t("aboutme_nav")}
             </Nav.Link>
@@ -30,8 +33,8 @@ function Navbar() {
               {t("contact_nav")}
             </Nav.Link>
           </Nav>
+          <LanguageSwitcher />
         </Container>
-        <LanguageSwitcher />
       </Navbarr>
     </header>
   );

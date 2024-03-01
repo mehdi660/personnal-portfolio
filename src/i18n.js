@@ -49,7 +49,7 @@ i18n
           skills_nav: "Skill",
           project_nav: "Projet",
           contact_nav: "Contact",
-          welcome: "Bienvenu dans mon monde !",
+          welcome: "Bienvenue dans mon monde !",
           scroll: "Descendez pour en apprendre plus sur moi (:",
           aboutme_title: "À propos de moi🕶",
           aboutme_desc:
