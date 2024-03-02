@@ -7,7 +7,7 @@
   background-color: #5350a8;
   border: 1px solid #ffbf00;
   margin: 5px;
-  width: 50px; /* Vous pouvez supprimer cette propriété */
+
   height: 40px; /* Ajout de cette propriété */
   color: #ffbf00;
   transition: 0.3s;
@@ -30,9 +30,10 @@
   color: #5350a8;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 475px) {
   .btn_switch {
-    width: 30px;
+    width: 20px;
+    height: 20px; /* Ajout de cette propriété */
     font-size: 13px;
   }
 }
