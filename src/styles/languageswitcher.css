@@ -7,10 +7,22 @@
   background-color: #5350a8;
   border: 1px solid #ffbf00;
   margin: 5px;
-  width: 40px;
+  width: 50px; /* Vous pouvez supprimer cette propriété */
+  height: 40px; /* Ajout de cette propriété */
   color: #ffbf00;
   transition: 0.3s;
   text-align: center;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn_switch img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%; /* Ajout de cette propriété */
+  border-radius: 20px;
 }
 
 .btn_switch:hover {

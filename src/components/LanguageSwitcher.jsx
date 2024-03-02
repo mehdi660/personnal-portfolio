@@ -1,5 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import usa from "../assets/Flag_of_the_United_States.png";
+import fr from "../assets/Flag_of_France.png";
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
@@ -15,14 +17,16 @@ const LanguageSwitcher = () => {
         id="en"
         onClick={() => changeLanguage("en")}
       >
-        En
+        <img src={usa} alt="usa flag" />
       </button>
+
       <button
         className="btn_switch"
         id="fr"
         onClick={() => changeLanguage("fr")}
       >
-        Fr
+        {" "}
+        <img src={fr} alt="fr flag" />
       </button>
     </div>
   );
