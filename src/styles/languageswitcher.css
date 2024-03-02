@@ -7,15 +7,16 @@
   background-color: #5350a8;
   border: 1px solid #ffbf00;
   margin: 5px;
-
-  height: 40px; /* Ajout de cette propriété */
+  width: 60px;
+  height: 40px;
   color: #ffbf00;
-  transition: 0.3s;
+  transition: 0.3s all ease-in-out;
   text-align: center;
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .btn_switch img {
@@ -26,8 +27,10 @@
 }
 
 .btn_switch:hover {
-  background-color: #ffbf00;
-  color: #5350a8;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  opacity: 0.8;
 }
 
 @media only screen and (max-width: 475px) {
