@@ -35,8 +35,8 @@
 
 @media only screen and (max-width: 475px) {
   .btn_switch {
-    width: 20px;
-    height: 20px; /* Ajout de cette propriété */
+    width: 30px;
+    height: 30px; /* Ajout de cette propriété */
     font-size: 13px;
   }
 }
