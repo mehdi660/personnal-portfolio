@@ -78,6 +78,11 @@ main {
   transform: skew(0deg, -30deg);
 }
 
+.title,
+.desc {
+  min-height: 1.5em; /* ou une valeur appropriée pour votre conception */
+}
+
 @keyframes move {
   25% {
     opacity: 1;
