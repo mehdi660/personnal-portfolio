@@ -1,8 +1,4 @@
 /* Styles pour le mode sombre */
-.dark-mode {
-  background-color: #000; /* Couleur de fond sombre */
-  color: #fff; /* Couleur du texte en mode sombre */
-}
 
 /* Styles pour les éléments qui auront un effet de lampe torche */
 /* Styles pour les éléments qui auront un effet de lampe torche */
@@ -11,4 +7,20 @@
     0.6
   ); /* Appliquer une ombre légère pour assombrir les éléments */
   transition: filter 0.3s ease; /* Ajouter une transition pour une animation fluide */
+}
+
+.torch {
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  pointer-events: none; /* Pour permettre à la souris de passer à travers */
+  transform: translate(-50%, -50%);
+  mix-blend-mode: overlay; /* Pour un effet d'éclairage plus naturel */
+  z-index: 9999; /* Assurez-vous que l'élément est au-dessus de tout le reste */
 }

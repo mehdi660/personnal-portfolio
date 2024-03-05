@@ -2,12 +2,10 @@ import React, { useState, useEffect } from "react";
 
 const DarkMode = () => {
   const [darkMode, setDarkMode] = useState(false);
+  const [torchX, setTorchX] = useState(null);
+  const [torchY, setTorchY] = useState(null);
 
   useEffect(() => {
-    // Code pour détecter si le mode sombre est activé ou désactivé
-    // Par exemple, vous pouvez utiliser localStorage ou un autre moyen pour stocker l'état du mode sombre
-    // Cela peut varier en fonction de la façon dont vous implémentez le mode sombre dans votre application
-    // Dans cet exemple, j'utilise localStorage pour stocker l'état du mode sombre
     const isDarkMode = localStorage.getItem("darkMode") === "true";
     setDarkMode(isDarkMode);
   }, []);
@@ -20,27 +18,37 @@ const DarkMode = () => {
 
   const handleMouseMove = (event) => {
     if (darkMode) {
-      const target = event.target;
-      target.classList.remove("ombre");
+      const { clientX, clientY } = event;
+      setTorchX(clientX);
+      setTorchY(clientY + window.scrollY); // Ajustement pour le défilement de la page
     }
   };
 
-  const handleMouseOut = (event) => {
+  const handleMouseOut = () => {
     if (darkMode) {
-      event.target.classList.add("ombre");
+      setTorchX(null);
+      setTorchY(null);
     }
   };
+
+  useEffect(() => {
+    document.addEventListener("mousemove", handleMouseMove);
+    document.addEventListener("mouseout", handleMouseOut);
+
+    return () => {
+      document.removeEventListener("mousemove", handleMouseMove);
+      document.removeEventListener("mouseout", handleMouseOut);
+    };
+  }, [darkMode]);
 
   return (
-    <div
-      className={`App ${darkMode ? "dark-mode" : ""}`}
-      onMouseMove={handleMouseMove}
-      onMouseOut={handleMouseOut}
-    >
-      {/* Bouton pour basculer le mode sombre */}
+    <div className={`App ${darkMode ? "dark-mode" : ""}`}>
       <button onClick={toggleDarkMode}>
         {darkMode ? "Mode Lumière" : "Mode Sombre"}
       </button>
+      {darkMode && torchX !== null && torchY !== null && (
+        <div className="torch" style={{ left: torchX, top: torchY }} />
+      )}
     </div>
   );
 };

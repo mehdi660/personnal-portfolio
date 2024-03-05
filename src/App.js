@@ -1,9 +1,9 @@
 import Home from "./pages/Home";
 
-function App({ handleMouseMove, handleMouseOut }) {
+function App({ handleMouseMove, handleMouseOut, darkMode }) {
   return (
     <div
-      className="dark-mode ombre "
+      className={`App ${darkMode ? "dark-mode" : ""}`}
       onMouseMove={handleMouseMove}
       onMouseOut={handleMouseOut}
     >
