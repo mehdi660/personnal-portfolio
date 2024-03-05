@@ -18,14 +18,29 @@ const DarkMode = () => {
     localStorage.setItem("darkMode", newDarkMode);
   };
 
+  const handleMouseMove = (event) => {
+    if (darkMode) {
+      const target = event.target;
+      target.classList.remove("ombre");
+    }
+  };
+
+  const handleMouseOut = (event) => {
+    if (darkMode) {
+      event.target.classList.add("ombre");
+    }
+  };
+
   return (
-    <div className={`App ${darkMode ? "dark-mode" : ""}`}>
+    <div
+      className={`App ${darkMode ? "dark-mode" : ""}`}
+      onMouseMove={handleMouseMove}
+      onMouseOut={handleMouseOut}
+    >
       {/* Bouton pour basculer le mode sombre */}
       <button onClick={toggleDarkMode}>
         {darkMode ? "Mode Lumière" : "Mode Sombre"}
       </button>
-      <h1>Mon Portfolio</h1>
-      {/* Contenu de votre portfolio */}
     </div>
   );
 };

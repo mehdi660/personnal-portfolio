@@ -11,6 +11,7 @@ import "./styles/project.css";
 import "./styles/contact.css";
 import "./styles/footer.css";
 import "./styles/nav.css";
+import "./styles/dark.css";
 import i18n from "./i18n";
 import "./styles/languageswitcher.css";
 

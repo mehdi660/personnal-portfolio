@@ -1,10 +1,14 @@
 import Home from "./pages/Home";
 
-function App() {
+function App({ handleMouseMove, handleMouseOut }) {
   return (
-    <>
+    <div
+      className="dark-mode ombre "
+      onMouseMove={handleMouseMove}
+      onMouseOut={handleMouseOut}
+    >
       <Home />
-    </>
+    </div>
   );
 }
 

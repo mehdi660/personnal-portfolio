@@ -6,6 +6,7 @@ import Avatar from "@mui/joy/Avatar";
 import moi from "../assets/moi.jpg";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "./LanguageSwitcher";
+import DarkMode from "./DarkMode";
 
 function Navbar() {
   const { t } = useTranslation();
@@ -33,6 +34,7 @@ function Navbar() {
               {t("contact_nav")}
             </Nav.Link>
           </Nav>
+          <DarkMode />
           <LanguageSwitcher />
         </Container>
       </Navbarr>

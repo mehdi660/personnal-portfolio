@@ -1,0 +1,14 @@
+/* Styles pour le mode sombre */
+.dark-mode {
+  background-color: #000; /* Couleur de fond sombre */
+  color: #fff; /* Couleur du texte en mode sombre */
+}
+
+/* Styles pour les éléments qui auront un effet de lampe torche */
+/* Styles pour les éléments qui auront un effet de lampe torche */
+.ombre {
+  filter: brightness(
+    0.6
+  ); /* Appliquer une ombre légère pour assombrir les éléments */
+  transition: filter 0.3s ease; /* Ajouter une transition pour une animation fluide */
+}
