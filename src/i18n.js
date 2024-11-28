@@ -20,7 +20,7 @@ i18n
           scroll: "Scroll down to learn more about me (:",
           aboutme_title: "About me 🕶",
           aboutme_desc:
-            "Hello! My name is Mehdi, I'm 21 years old, and I was born on 26/09/2002 in Belfort (France). Since September 2022, I've started coding, and since then, I haven't stopped. Coding, for me, is a form of relaxation that allows me to unwind and think about something else, much like sports or video games. I have a passion for creating new things, solving problems, and the satisfaction of seeing the results of my creations.",
+            "Hello! My name is Mehdi, I'm 22 years old, and I was born on 26/09/2002 in Belfort (France). Since September 2022, I've started coding, and since then, I haven't stopped. Coding, for me, is a form of relaxation that allows me to unwind and think about something else, much like sports or video games. I have a passion for creating new things, solving problems, and the satisfaction of seeing the results of my creations.",
           myskills_title: "My skills 💪🏻",
           myskills_incoming: "In coming...",
           myskills_resume: "Resume",
@@ -53,7 +53,7 @@ i18n
           scroll: "Descendez pour en apprendre plus sur moi (:",
           aboutme_title: "À propos de moi🕶",
           aboutme_desc:
-            "Bonjour ! Je m’appelle Mehdi, j’ai 21 ans et je suis né le 26/09/2002 à Belfort. Depuis septembre 2022, j'ai commencé à écrire du code, et depuis lors, je n'ai jamais arrêté. Pour moi, écrire du code est une forme de relaxation qui me permet de me détendre et de penser à autre chose, un peu comme le sport ou les jeux vidéo. J'ai une passion pour la création de nouvelles choses, la résolution de problèmes et la satisfaction de voir le résultat de mes créations.",
+            "Bonjour ! Je m’appelle Mehdi, j’ai 22 ans et je suis né le 26/09/2002 à Belfort. Depuis septembre 2022, j'ai commencé à écrire du code, et depuis lors, je n'ai jamais arrêté. Pour moi, écrire du code est une forme de relaxation qui me permet de me détendre et de penser à autre chose, un peu comme le sport ou les jeux vidéo. J'ai une passion pour la création de nouvelles choses, la résolution de problèmes et la satisfaction de voir le résultat de mes créations.",
           myskills_title: "Mes skills 💪🏻",
           myskills_incoming: "À venir...",
           myskills_resume: "CV",
